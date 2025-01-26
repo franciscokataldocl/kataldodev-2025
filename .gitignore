@@ -1,41 +1,60 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Next.js
+.next/
+out/
 
-# testing
-/coverage
+# Build output
+dist/
 
-# next.js
-/.next/
-/out/
+# Dependency directories
+/.turbo/
 
-# production
-/build
+# .env files
+.env
+.env.local
+.env.*.local
 
-# misc
+# Log files
+*.log
+
+# IDEs
+.idea/
+
+# macOS
 .DS_Store
-*.pem
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# Vim
+*.swp
+*.swo
 
-# env files (can opt-in for committing if needed)
-.env*
+# VSCode
+.vscode/
 
-# vercel
-.vercel
+# JetBrains
+*.iml
+*.ipr
+*.iws
+.idea/
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Next.js types
+.next/types/
+
+# Testing
+coverage/
+
+# Temporary files
+*.bak
+*.tmp
+
+# macOS Finder directory attributes
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+Thumbs.db
