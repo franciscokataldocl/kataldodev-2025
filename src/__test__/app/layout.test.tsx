@@ -1,14 +1,12 @@
-// src/__tests__/layout.test.tsx
 import { render } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
 import RootLayout from "@/app/layout";
-// Hacemos un mock de las fuentes de 'next/font/google'
 vi.mock("next/font/google", () => ({
     Poppins: () => ({
-        variable: "font-poppins", // Simula la clase de la variable de la fuente
+        variable: "font-poppins",
     }),
     Work_Sans: () => ({
-        variable: "font-worksans", // Simula la clase de la variable de la fuente
+        variable: "font-worksans",
     }),
 }));
 
@@ -20,7 +18,6 @@ describe("RootLayout", () => {
             </RootLayout>
         );
 
-        // Usando el matcher `toBeInTheDocument`
         expect(getByText("Test Child")).toBeInTheDocument();
     });
 

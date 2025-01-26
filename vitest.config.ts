@@ -1,17 +1,16 @@
-/// <reference types="vitest" />
 
 import { defineConfig } from 'vitest/config';
-import path from 'path'; // Necesario para configurar el alias
+import path from 'path';
 
 export default defineConfig({
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src'), // Configura @ como alias para la carpeta src
+            '@': path.resolve(__dirname, './src'),
         },
     },
     test: {
-        environment: 'jsdom', // Usa jsdom como entorno de prueba para React
-        globals: true, // Permite usar expect globalmente sin importar su importación
-        setupFiles: './vitest.setup.ts', // Archivo para configuraciones adicionales
+        environment: 'jsdom',
+        globals: true,
+        setupFiles: './vitest.setup.ts',
     },
 });
