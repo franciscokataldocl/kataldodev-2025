@@ -4,7 +4,8 @@ npm-debug.log
 yarn-error.log
 .pnp/
 .pnp.js
-
+.idea
+tips.txt
 # Next.js
 .next/
 out/
@@ -40,7 +41,6 @@ dist/
 *.iml
 *.ipr
 *.iws
-.idea/
 
 # Next.js types
 .next/types/
