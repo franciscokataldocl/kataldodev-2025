@@ -12,10 +12,18 @@
     "test:ui": "vitest ui"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.17.12",
     "@testing-library/dom": "^10.4.0",
+    "@types/gsap": "^3.0.0",
+    "framer-motion": "^12.0.5",
+    "gsap": "^3.12.7",
+    "gsap-trial": "^3.12.7",
+    "hamburger-react": "^2.5.2",
+    "lottie-react": "^2.4.1",
     "next": "15.1.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.172.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",
@@ -24,6 +32,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/tailwindcss": "^3.1.0",
+    "@types/three": "^0.172.0",
     "@vitest/ui": "^3.0.4",
     "jsdom": "^26.0.0",
     "postcss": "^8",

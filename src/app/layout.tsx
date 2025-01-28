@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins, Work_Sans } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/app/components/navigation/NavBar";
+import StackedDivs from "@/app/components/stackedDivsAnimation";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -26,8 +28,11 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
     return (
-        <html lang="en">
+        <html lang="es">
         <body className={`${poppins.variable} ${workSans.variable} antialiased`}>
+        <StackedDivs/>
+
+        <NavBar/>
         {children}
         </body>
         </html>

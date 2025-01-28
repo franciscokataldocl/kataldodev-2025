@@ -1,0 +1,5 @@
+font-[family-name:var(--font-poppins)]
+font-[family-name:var(--font-worksans)] font-semibold
+text-[200px]
+text-customBlue
+
